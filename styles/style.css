@@ -1,4 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root {
+    --fg-yellow-green1: #C3C5B7; 
+    --fg-white1: #FFF5F2;
+    --fg-white2: #FFFFFF;  
+    --fg-grey1: #F0EEEF;
+    --fg-grey2: #bebebe;
+    --fg-black1: #1A0702; 
+    --fg-red1: #E54011;
+    --fg-red2: #FF4713;
+    --sd-black1: #00000040; 
+}
+
 body {
     background-image : url('/assets/background.webp');
-    
+    font-family: 'Electrolize', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
+
+#container {
+    display: grid;
+    place-items: center;
+    min-height:100vh;
+}
+
+.calc {
+    box-shadow:5px 5px 10px var(--fg-grey2), -5px -5px 10px var(--fg-white2);    
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--fg-grey1);
+    width: 466px;
+    height: 650px;
+}
+
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.output {
+    box-shadow: inset 0.5px 4px 0.5px 0.5px var(--fg-grey2);
+    background-color: var(--fg-grey1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 368px;
+    height: 94px;
+}
+
+.output-display {
+    box-shadow: inset 0.5px 4px 0.5px 0.5px var(--fg-grey2);
+    background-color: var(--fg-yellow-green1);
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    width: 344px;
+    height: 68px;
+}
+
+.output-display h3 {
+    text-shadow: 1px 1px 7px var(--);
+    font-size: 32px;
+    margin-right: 5%;
+}
+
+#title h1 {
+    font-family: 'Electrolize';
+    font-size: 46px;
+}
+
+#buttons {
+    margin-top: 50px;
+}
+
+.buttons-wrap {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.button {
+    box-shadow:5px 5px 10px var(--fg-grey2), -5px -5px 10px var(--fg-white1);    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    display: flex;
+    font-size: 32px;
+    width: 56px;
+    height: 56px;
+}
+
+.button p {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.button .for-basic-operations {
+    color: var(--fg-red2);
+}
+
+.button #calculate-button {
+    background-color: var(--fg-red1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    width:100%;
+    height: 100%;
+}
+
+#calculate-button p {
+    color: var(--fg-white2);
+}
+
+#toggle-mode {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
