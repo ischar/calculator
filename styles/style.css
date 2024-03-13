@@ -92,9 +92,8 @@ body {
     font-size: 32px;
     width: 56px;
     height: 56px;
-}
 
-.button p {
+    /* 드래그 방지 */
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -webkit-user-select: none;
